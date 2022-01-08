@@ -11,9 +11,15 @@ int main()
 }
 
 char toUpper(char x){
-    return x - 32;
+    if(x >= 'a' && x <= 'z'){
+        return x - 32;
+    }
+    return x;
 }
 
 char toLower(char x){
-    return x + 32;
+    if(x >= 'A' && x <= 'Z'){
+        return x + 32;
+    }
+    return x;
 }
